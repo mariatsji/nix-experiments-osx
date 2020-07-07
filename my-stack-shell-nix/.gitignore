@@ -1,0 +1,8 @@
+.stack-work/
+.stackprofile/
+my-stack-project.cabal
+*.iml
+.idea/
+dist/
+.DS_Store
+
