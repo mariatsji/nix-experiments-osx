@@ -3,3 +3,5 @@
 	stack build
 
 	nix-build shell.nix
+
+	nix-build docker.nix
