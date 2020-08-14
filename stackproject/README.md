@@ -1,8 +1,8 @@
 # stackproject
-    
-    stack build --stack-yaml stack2.yaml
 
-    nix-build simple2.nix
+    stack build --nix --nix-shell-file simple.nix
+
+    nix-build simple.nix
 
     nix-build docker.nix
 

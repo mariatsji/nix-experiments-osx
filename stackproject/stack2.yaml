@@ -1,6 +1,0 @@
-resolver: nightly-2020-08-13
-packages:
-- .
-nix:
-  enable: true
-  shell-file: simple2.nix

@@ -1,9 +1,9 @@
+{ }:
 with (import <nixpkgs> {});
-derivation {
+
+haskell.lib.buildStackProject {
+  ghc = haskell.compiler.ghc8101;
   name = "stackproject";
-  builder = "${bash}/bin/bash";
-  args = [ ./simple_builder.sh ];
-  inherit ghc stack coreutils gnutar gnumake bzip2;
-  stackyaml = ./stack.yaml;
-  system = builtins.currentSystem;
+  buildInputs = [ zlib ];
+  src = ./.;
 }

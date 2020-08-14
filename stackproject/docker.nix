@@ -1,4 +1,4 @@
-let artifact = import ./simple2.nix { system = "x86_64-linux"; };
+let artifact = import ./simple.nix { };
     pkgs = import <nixpkgs> {};
 
 in pkgs.dockerTools.buildImage {
